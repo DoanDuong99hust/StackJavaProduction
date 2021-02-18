@@ -2,7 +2,7 @@ package com.doanduong.files.controller;
 
 public class App {
     public static void main(String[] args) {
-        BaseController controller = new BaseController();
+        UploadController controller = new UploadController();
         System.out.println(controller.getFolderUpload());
 
     }
