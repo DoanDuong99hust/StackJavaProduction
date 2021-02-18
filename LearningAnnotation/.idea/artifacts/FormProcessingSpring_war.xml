@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="FormProcessingSpring:war">
+    <output-path>$PROJECT_DIR$/../FormProcessingSpring/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>FormProcessingSpring</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="FormProcessingSpring-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="FormProcessingSpring:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GeneratedData/GeneratedData.iml" filepath="$PROJECT_DIR$/GeneratedData/GeneratedData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LearningAnnotation/LearningAnnotation.iml" filepath="$PROJECT_DIR$/LearningAnnotation/LearningAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringHelloworld/SpringHelloworld.iml" filepath="$PROJECT_DIR$/SpringHelloworld/SpringHelloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/StackJavaPractice.iml" filepath="$PROJECT_DIR$/.idea/StackJavaPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StaticResource/StaticResource.iml" filepath="$PROJECT_DIR$/StaticResource/StaticResource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UploadDownLoadFile/UploadDownLoadFile.iml" filepath="$PROJECT_DIR$/UploadDownLoadFile/UploadDownLoadFile.iml" />
+    </modules>
+  </component>
+</project>

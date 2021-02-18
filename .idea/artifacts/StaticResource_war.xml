@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="StaticResource:war">
+    <output-path>$PROJECT_DIR$/StaticResource/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>StaticResource</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="StaticResource-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="StaticResource:war exploded" />
+    </root>
+  </artifact>
+</component>
