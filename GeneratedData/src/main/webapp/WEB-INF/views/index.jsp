@@ -11,8 +11,10 @@
     <title>Xml data</title>
 </head>
 <body>
-<h1>Spring MVC Generate XML!</h1>
+<h1>Spring MVC Generate XML JSON!</h1>
 <a href="xml">/xml</a> <br/>
 <a href="list-xml">/list-xml</a> <br/>
+<a href="json">/json</a> <br/>
+<a href="list-json">/list-json</a> <br/>
 </body>
 </html>

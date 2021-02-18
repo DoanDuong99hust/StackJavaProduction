@@ -1,6 +1,7 @@
 package com.doanduong.generateddata.controller;
 
 import com.doanduong.generateddata.entities.ListUserXml;
+import com.doanduong.generateddata.entities.UserJson;
 import com.doanduong.generateddata.entities.UserXml;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,7 @@ public class XmlController {
         return "index";
     }
 
+    // Trả dữ liệu về XML
     @RequestMapping("/xml")
     @ResponseBody
     public UserXml testXml() {
@@ -33,5 +35,21 @@ public class XmlController {
         userXmlList.add(userXml2);
         ListUserXml listUserXml = new ListUserXml(userXmlList);
         return listUserXml;
+    }
+
+    // Trả dữ liệu về Json
+    @RequestMapping("/json")
+    @ResponseBody
+    public UserJson testJSON() {
+        UserJson userJson = new UserJson(1, "kai", "abc@gmail.com");
+        return userJson;
+    }
+    @RequestMapping("/list-json")
+    @ResponseBody
+    public List<UserJson> testListJSON() {
+        List<UserJson> listUser = new ArrayList<UserJson>();
+        listUser.add(new UserJson(1, "kai", "abc@gmail.com"));
+        listUser.add(new UserJson(2, "stack", "def@yahoo.com"));
+        return listUser;
     }
 }
