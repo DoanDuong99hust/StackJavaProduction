@@ -18,7 +18,7 @@
       <module name="LearningAnnotation" target="1.8" />
       <module name="SpringHelloworld" target="1.8" />
       <module name="StaticResource" target="1.8" />
-      <module name="UploadDownLoadFile" target="1.5" />
+      <module name="UploadDownLoadFile" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

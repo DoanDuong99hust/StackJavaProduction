@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="UploadDownLoadFile:war">
+    <output-path>$PROJECT_DIR$/UploadDownLoadFile/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>UploadDownLoadFile</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="UploadDownLoadFile-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="UploadDownLoadFile:war exploded" />
+    </root>
+  </artifact>
+</component>
