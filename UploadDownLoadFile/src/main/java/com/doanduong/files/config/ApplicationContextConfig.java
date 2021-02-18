@@ -16,8 +16,8 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 public class ApplicationContextConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/bootstrap/**")
-                .addResourceLocations("/resources/bootstrap/");
+        registry.addResourceHandler("/resources/**")
+                .addResourceLocations("/resources/");
     }
 
     @Bean("viewResolver")

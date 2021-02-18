@@ -1,6 +1,8 @@
 package com.doanduong.files.controller;
 
 import com.doanduong.files.model.MyFile;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -48,5 +50,20 @@ public class BaseController {
             file.mkdirs();
         }
         return file;
+    }
+
+    // Upload file with progressbar
+    @RequestMapping(value = "/uploadFileProgressBar", method = RequestMethod.POST)
+    public ResponseEntity<String> uploadFileProgressBar(MyFile myFile) {
+        try {
+            MultipartFile multipartFile = myFile.getMultipartFile();
+            String fileName = multipartFile.getOriginalFilename();
+            File file = new File("D:/files", fileName);
+            multipartFile.transferTo(file);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new ResponseEntity<String>("failed: "+e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity<String>("success",HttpStatus.OK);
     }
 }
